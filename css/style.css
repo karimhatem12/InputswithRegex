@@ -1,0 +1,35 @@
+/* font-family: 'Pacifico', cursive;
+font-family: 'PT Sans Caption', sans-serif;
+font-family: 'Righteous', cursive;*/
+body {
+    background-color: #F7ECDE;
+}
+
+.head {
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    isolation: isolate;
+}
+
+.head::after {
+    content: "";
+    background-color: red;
+    width: 50px;
+    height: 10px;
+}
+
+.head2 {
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+    /* color: linear-gradient(to right, green, yellow) !important; */
+    background: -webkit-linear-gradient(right, green, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.border_edit {
+    border-top: 2px dotted;
+    border-bottom: 2px dotted;
+}

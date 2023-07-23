@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 9</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+
+    <!-- bootStrap -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FontAwosome -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- My Css File -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>DANIELS</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center text-center py-lg-5">
+            <h1 class=" head">Bookmarker</h1>
+        </div>
+        <div class="row py-lg-3 border_edit">
+
+            <h2 class="head2 py-lg-3 justify-content-center text-center">
+                <i class="fa-solid fa-bookmark"></i>
+                <span class="book">Bookmark your favorite sites</span>
+                <i class="fa-solid fa-bookmark "></i>
+            </h2>
+            <label for="">
+                <i class="fa-solid fa-bookmark" style="font-family: 'PT Sans Caption', sans-serif;"></i>
+                Site Name
+            </label>
+            <input type="text" class="form-control my-lg-2" placeholder="Bookmark Name" aria-label="Username"
+                aria-describedby="addon-wrapping" id="bookMarkName">
+            <label for="">
+                <i class="fa-solid fa-bookmark" style="font-family: 'PT Sans Caption', sans-serif;"></i>
+                Site URL
+            </label>
+            <input type="text" class="form-control my-lg-2" placeholder="Website URL" aria-label="Username"
+                aria-describedby="addon-wrapping" id="websiteURL">
+            <div class="text-center my-lg-2">
+                <button type="button" class="btn btn-primary" onclick="addBookMark()"
+                    style="width: 150px;">Submit</button>
+            </div>
+            <!-- <i class="fa-solid fa-eye pe-2"></i> -->
+        </div>
+        <div class="row text-center py-lg-2  my-lg-4 bg-body">
+            <table>
+                <thead>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="myData">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Js Links -->
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
